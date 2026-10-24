@@ -34,7 +34,7 @@ jobs:
         shell: bash
         run: |
           install -d "$RUNNER_TEMP/dot2-public"
-          cp -- index.html privacy.html styles.css carousel.js "$RUNNER_TEMP/dot2-public/"
+          cp -- index.html business.html privacy.html styles.css business.css carousel.js quote.js "$RUNNER_TEMP/dot2-public/"
           cp -R -- assets "$RUNNER_TEMP/dot2-public/assets"
           touch "$RUNNER_TEMP/dot2-public/.nojekyll"
 

@@ -78,6 +78,13 @@ h2 { font-size: clamp(30px, 3vw, 43px); font-weight: 500; line-height: 1.12; let
 .about-copy { padding-top: 35px; max-width: 420px; }
 .about-copy p { color: var(--muted); font-size: 14px; line-height: 1.9; margin-bottom: 16px; }
 .about-copy .text-link { margin-top: 8px; }
+.business-teaser { background: var(--white); border-top: 1px solid var(--line); }
+.business-teaser-inner { display: flex; align-items: center; justify-content: space-between; gap: 48px; padding-block: 60px; }
+.business-teaser-inner > div { max-width: 610px; }
+.business-teaser h2 { margin-bottom: 18px; }
+.business-teaser p:not(.eyebrow) { margin-bottom: 0; color: var(--muted); font-size: 14px; line-height: 1.9; }
+.business-teaser .button { flex-shrink: 0; }
+.main-nav a[aria-current="page"] { color: var(--accent); }
 .contact-section { background: #eceee7; border-top: 1px solid var(--line); }
 .contact-inner { display: flex; align-items: center; justify-content: space-between; gap: 40px; padding-block: 64px; }
 .contact-inner .eyebrow { margin-bottom: 18px; color: var(--muted); }
@@ -140,6 +147,7 @@ h2 { font-size: clamp(30px, 3vw, 43px); font-weight: 500; line-height: 1.12; let
   .about-section { grid-template-columns: 1fr; gap: 25px; padding-block: 55px; }
   .about-section h2 { font-size: 36px; }
   .about-copy { padding-top: 0; }
+  .business-teaser-inner { align-items: flex-start; flex-direction: column; gap: 26px; padding-block: 45px; }
   .contact-inner { align-items: flex-start; flex-direction: column; gap: 20px; padding-block: 45px; }
   .contact-inner h2 { font-size: 44px; }
   .contact-email { font-size: 24px; }
@@ -149,6 +157,10 @@ h2 { font-size: clamp(30px, 3vw, 43px); font-weight: 500; line-height: 1.12; let
   .privacy-main { padding-block: 35px 60px; }
   .back-link { margin-bottom: 42px; }
   .privacy-content { margin-top: 38px; }
+}
+@media (max-width: 540px) {
+  .header-inner { flex-wrap: wrap; padding-block: 16px 10px; gap: 10px; }
+  .main-nav { width: 100%; justify-content: space-between; gap: 12px; font-size: 11px; }
 }
 @media (max-width: 370px) {
   .main-nav { gap: 12px; font-size: 10px; }
