@@ -41,6 +41,6 @@ All local links are relative so the site works under the GitHub Pages repository
 
 The quote form validates details and prepares a reviewable email draft addressed to `support@dot2.co.uk`. The visitor must open the draft and send it through their own email app. A copy-details option and direct email link provide a fallback; the website does not submit or store enquiries. There is no automatic marketing opt-in.
 
-Prices are explicitly illustrative examples, not confirmed prices or checkout offers. Replace these examples once commercial terms are decided. Brand names and overlaid placements in the gallery are fictional demo concepts using current Dot2. artwork, not customer projects.
+Business orders have a minimum of 60 mousepads, enforced by the quote form. The indicative guide is 60 at £25 each, 100 at £22.50 each and 250 at £20 each; the lower volume prices are examples and all orders receive a written quote. Artwork/setup, delivery and any applicable VAT are confirmed separately. Replace the guide once commercial terms are decided. Brand names and overlaid placements in the gallery are fictional demo concepts using current Dot2. artwork, not customer projects.
 
 Before business outreach, assess the applicable marketing rules and lawful basis, provide identity, a privacy link and an easy opt-out, and maintain suppression records. The privacy notice describes intended business handling; keep provider and retention information aligned with actual operations as the service develops.

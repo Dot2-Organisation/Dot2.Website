@@ -14,6 +14,8 @@
   if (!result || !summary || !emailLink || !resultTitle || !status || !copyButton || !submitButton || !quantityField || !designField) return;
 
   const recipient = 'support@dot2.co.uk';
+  const minimumQuantity = Number(quantityField.min);
+  const maximumQuantity = Number(quantityField.max);
   const singleLine = value => String(value || '').replace(/[\r\n\u2028\u2029]+/g, ' ').trim();
 
   function clearDraft() {
@@ -42,8 +44,8 @@
       }
     }
     const quantity = Number(values.get('quantity'));
-    if (!Number.isInteger(quantity) || quantity < 1 || quantity > 100000) {
-      quantityField.setCustomValidity('Please enter a whole number from 1 to 100,000.');
+    if (!Number.isInteger(quantity) || quantity < minimumQuantity || quantity > maximumQuantity) {
+      quantityField.setCustomValidity(`Please enter a whole number from ${minimumQuantity.toLocaleString('en-GB')} to ${maximumQuantity.toLocaleString('en-GB')}.`);
       quantityField.reportValidity();
       return;
     }
@@ -97,7 +99,7 @@
   document.querySelectorAll('[data-quote-preset]').forEach(preset => {
     preset.addEventListener('click', event => {
       const quantity = Number(preset.dataset.quantity);
-      const hasQuantity = Number.isInteger(quantity) && quantity > 0 && quantity <= 100000;
+      const hasQuantity = Number.isInteger(quantity) && quantity >= minimumQuantity && quantity <= maximumQuantity;
       const hasDesign = [...designField.options].some(option => option.value && option.value === preset.dataset.design);
       if (hasQuantity) quantityField.value = String(quantity);
       if (hasDesign) designField.value = preset.dataset.design;
